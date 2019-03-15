@@ -7,12 +7,9 @@ import Footer from './components/Footer';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Products from './components/Pages/Products';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch
-} from 'react-router-dom';
+import {Route} from 'react-router-dom';
+  
+
 
 //import { datos } from './datos.json';
 class App extends Component {

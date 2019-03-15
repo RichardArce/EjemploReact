@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/Navigation/css_design/design_nav.css';
 import '../styles/Navigation/css_structure/structure_nav.css';
 import Logo from '../logo.svg';
-import {Nav,Navbar} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 class Navigation extends Component {
     render() {
@@ -17,7 +16,7 @@ class Navigation extends Component {
   <div className="collapse navbar-collapse" id="collapsibleNavbar">
     <ul className="navbar-nav">
       <li className="nav-item">
-        <NavLink className="nav-link" exact to="/" exact>Home</NavLink>
+        <NavLink className="nav-link" exact to="/">Home</NavLink>
       </li>
       <li className="nav-item">
         <NavLink className="nav-link" to="/About">About us</NavLink>
@@ -31,5 +30,4 @@ class Navigation extends Component {
         )
     }
 }
-
 export default Navigation;
