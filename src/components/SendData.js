@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 class SendData extends Component {
 
     constructor(props) {
@@ -63,8 +64,8 @@ class SendData extends Component {
                         <input type="email" class="form-control" id="email" name="email" value={this.state.email} onChange={this.handleChange}/>
                     </div>
                     <div class="form-group">
-                        <label for="inputFavHero">Favorite superhero</label>
-                        <input type="text" class="form-control" id="inputFavHero" name="favHero" value={this.state.favHero} onChange={this.handleChange}/>
+                        <label for="favHero">Favorite superhero</label>
+                        <input type="text" class="form-control" id="favHero" name="favHero" value={this.state.favHero} onChange={this.handleChange}/>
                     </div>
                     <div class="form-group">
                         <label for="favPower">Favorite superpower</label>
