@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../../styles/Pages/Home/home.css';
 class Home extends Component {
 
   constructor(props) {
@@ -44,36 +44,43 @@ class Home extends Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div>
-          {console.log("Items ",items)}
-          {items.data.results.map(item => (
-            <div key={item.id}>
-              <p>{item.title}</p> 
-              <p>{item.description}</p>
-            </div>
-          ))}
+        <div className="container-fluid">
+          <div className="card-deck">
+            {items.data.results.map(item => (
+              <div className="col-3" key={item.id}>
+                <div className="card">
+                  <img className="card-img" src={item.thumbnail.path+"/landscape_incredible."+item.thumbnail.extension} alt="Card image cap"></img>
+                  <div className="card-body">
+                    <h5 className="card-title">{item.title}</h5>
+                    <p className="card-text">{item.description}</p>
+                    <a href={item.urls[0].url} className="btn btn-primary">Ver este comic.</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       );
     }
   }
 
-//   handleSubmit() {
-//     this.webService().then((resolved) => {
-//       console.log(resolved.json())
-//     }, (error) => {
-//         alert('ERROR Data was NOT sent');
-//     });
-//     // event.preventDefault();
-// }
+  //   handleSubmit() {
+  //     this.webService().then((resolved) => {
+  //       console.log(resolved.json())
+  //     }, (error) => {
+  //         alert('ERROR Data was NOT sent');
+  //     });
+  //     // event.preventDefault();
+  // }
 
-//   webService() {
-//     return fetch('https://gateway.marvel.com:443/v1/public/characters?apikey=9eeb84160b6a67f701c4741064c0847a', {
-//         headers: {
-//             "Content-Type": "application/json; charset=utf-8"
-//         },
-//         method: 'GET'
-//     })
-// }
-  }
-  
-  export default Home;
+  //   webService() {
+  //     return fetch('https://gateway.marvel.com:443/v1/public/characters?apikey=9eeb84160b6a67f701c4741064c0847a', {
+  //         headers: {
+  //             "Content-Type": "application/json; charset=utf-8"
+  //         },
+  //         method: 'GET'
+  //     })
+  // }
+}
+
+export default Home;
