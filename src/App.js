@@ -10,15 +10,17 @@ import {Route} from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className="Container">
+      <div className="d-flex flex-column sticky-footer-wrapper">
         <header>
           <Navigation />
         </header>
+        <main>
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/About' component={About}></Route>
           <Route exact path='/Products' component={Products}></Route>
+          </main>
         <footer>
-         
+         <Footer/>
         </footer>
       </div>
     )
