@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Products from './components/Pages/Products';
+import SendData from './components/SendData';
 import {Route} from 'react-router-dom';
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/About' component={About}></Route>
           <Route exact path='/Products' component={Products}></Route>
-          </main>
+        </main>
         <footer>
          <Footer/>
         </footer>

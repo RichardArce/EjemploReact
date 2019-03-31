@@ -30,9 +30,15 @@
     transform: rotate(360deg);
   }
 }
+
+.dataForm {
+  margin: 2em;
+}
+
 header{
   margin-bottom: 1rem; 
 }
 footer{
   margin-top: 1rem;
 }
+
