@@ -1,4 +1,10 @@
-img{
+header img{
+    margin-right: 0;
+}
+header .navbar{
+    margin: 0;
+}
+header img{
     width: 3rem;
     height: 3rem;
 }

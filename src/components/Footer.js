@@ -9,6 +9,7 @@ class Footer extends Component {
                     <h5 className="card-title">React Project</h5>
                     <p className="card-text">Footer</p>
                     <a href="https://reactjs.org/" className="btn btn-primary">React</a>
+                    <h5>{this.props.title}</h5>
                 </div>
             </div>
         )
