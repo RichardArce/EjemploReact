@@ -9,7 +9,7 @@ class SendData extends Component {
             pname: '',
             email: '',
             favHero: '',
-            favPower: ''
+            favComic: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -22,7 +22,7 @@ class SendData extends Component {
             case "pname": this.setState({pname: event.target.value}); break;
             case "email": this.setState({email: event.target.value}); break;
             case "favHero": this.setState({favHero: event.target.value}); break;
-            case "favPower": this.setState({favPower: event.target.value}); break;
+            case "favComic": this.setState({favComic: event.target.value}); break;
             default:  break;
         }
       }
@@ -46,7 +46,7 @@ class SendData extends Component {
                 "name": this.state.pname,
                 "email": this.state.email,
                 "favHero": this.state.favHero,
-                "favPower": this.state.favPower
+                "favComic": this.state.favComic
             })
         })
     }
@@ -68,10 +68,10 @@ class SendData extends Component {
                         <input type="text" class="form-control" id="favHero" name="favHero" value={this.state.favHero} onChange={this.handleChange}/>
                     </div>
                     <div class="form-group">
-                        <label for="favPower">Favorite superpower</label>
-                        <textarea class="form-control" rows="3" id="favPower" name="favPower" value={this.state.favPower} onChange={this.handleChange}></textarea>
+                        <label for="favComic">Favorite comic</label>
+                        <textarea class="form-control" rows="3" id="favComic" name="favComic" value={this.state.favComic} onChange={this.handleChange}></textarea>
                     </div>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" class="btn btn-primary" />
                 </form>
             </div>
         );

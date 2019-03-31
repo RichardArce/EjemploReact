@@ -33,6 +33,8 @@
 
 .dataForm {
   margin: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 header{
@@ -41,4 +43,5 @@ header{
 footer{
   margin-top: 1rem;
 }
+
 
