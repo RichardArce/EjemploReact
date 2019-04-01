@@ -23,7 +23,10 @@ class Navigation extends Component {
       </li>
       <li className="nav-item">
         <NavLink className="nav-link" to="/About">About</NavLink>
-      </li> 
+      </li>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/Union">Union of Components</NavLink>
+      </li>  
     </ul>
   </div> 
 </nav>

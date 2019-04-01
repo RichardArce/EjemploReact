@@ -54,24 +54,24 @@ class SendData extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit} class="dataForm">
-                    <div class="form-group">
-                        <label for="pname">Name</label>
-                        <input type="text" class="form-control" id="pname" name="pname" value={this.state.pname} onChange={this.handleChange} />
+                <form onSubmit={this.handleSubmit} className="dataForm">
+                    <div className="form-group">
+                        <label htmlFor ="pname">Name</label>
+                        <input type="text" className="form-control" id="pname" name="pname" value={this.state.pname} onChange={this.handleChange} />
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" value={this.state.email} onChange={this.handleChange}/>
+                    <div className="form-group">
+                        <label htmlFor ="email">Email</label>
+                        <input type="email" className="form-control" id="email" name="email" value={this.state.email} onChange={this.handleChange}/>
                     </div>
-                    <div class="form-group">
-                        <label for="favHero">Favorite superhero</label>
-                        <input type="text" class="form-control" id="favHero" name="favHero" value={this.state.favHero} onChange={this.handleChange}/>
+                    <div className="form-group">
+                        <label htmlFor ="favHero">Favorite superhero</label>
+                        <input type="text" className="form-control" id="favHero" name="favHero" value={this.state.favHero} onChange={this.handleChange}/>
                     </div>
-                    <div class="form-group">
-                        <label for="favComic">Favorite comic</label>
-                        <textarea class="form-control" rows="3" id="favComic" name="favComic" value={this.state.favComic} onChange={this.handleChange}></textarea>
+                    <div className="form-group">
+                        <label htmlFor ="favComic">Favorite comic</label>
+                        <textarea className="form-control" rows="3" id="favComic" name="favComic" value={this.state.favComic} onChange={this.handleChange}></textarea>
                     </div>
-                    <input type="submit" value="Submit" class="btn btn-primary" />
+                    <input type="submit" value="Submit" className="btn btn-primary" />
                 </form>
             </div>
         );

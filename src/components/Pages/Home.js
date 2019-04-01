@@ -35,7 +35,15 @@ class Home extends Component {
         }
       )
   }
-
+  columnas = () =>{
+    if(this.props.size){
+      console.log(this.props.size);
+      return this.props.size;
+    }
+    else{
+      return "col-3";
+    }
+  }
   render() {
     const { error, isLoaded, items } = this.state;
     if (error) {
@@ -47,9 +55,9 @@ class Home extends Component {
         <div className="container-fluid">
           <div className="card-deck">
             {items.data.results.map(item => (
-              <div className="col-3" key={item.id}>
+              <div className={this.columnas()} key={item.id}>
                 <div className="card">
-                  <img className="card-img" src={item.thumbnail.path+"/landscape_incredible."+item.thumbnail.extension} alt="Card image cap"></img>
+                  <img className="card-img" src={item.thumbnail.path+"/landscape_incredible."+item.thumbnail.extension} alt="Marvel heroe"></img>
                   <div className="card-body">
                     <h5 className="card-title">{item.title}</h5>
                     <p className="card-text">{item.description}</p>
@@ -63,7 +71,6 @@ class Home extends Component {
       );
     }
   }
-
   //   handleSubmit() {
   //     this.webService().then((resolved) => {
   //       console.log(resolved.json())

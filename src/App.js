@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import SendData from './components/Pages/SendData';
+import Union from './components/Pages/Union';
 import {Route} from 'react-router-dom';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/SendData' component={SendData}></Route>
           <Route exact path='/About' component={About}></Route>
+          <Route exact path='/Union' component={Union}></Route>
         </main>
         <footer>
          <Footer/>
