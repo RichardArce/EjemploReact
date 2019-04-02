@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import '../../styles/Pages/Home/home.css';
 class Home extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
       items: [],
-      api: 'https://gateway.marvel.com:443/v1/public/comics?offset=20&apikey=9eeb84160b6a67f701c4741064c0847a'
+      api: 'https://gateway.marvel.com:443/v1/public/comics?limit=30&apikey=9eeb84160b6a67f701c4741064c0847a'
     };
   }
 
